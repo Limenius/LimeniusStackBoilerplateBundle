@@ -26,11 +26,17 @@
 </head>
 
 <body>
-  <div id="main">
-    <div class="stack">
-  {% block body %}
-  {% endblock %}
+  <div id="wrap">
+    <div id="main">
+      <div class="stack">
+    {% block body %}
+    {% endblock %}
+      </div>
     </div>
+  </div>
+  <div id="footer">
+    {% block footer %}
+    {% endblock %}
   </div>
 
 
